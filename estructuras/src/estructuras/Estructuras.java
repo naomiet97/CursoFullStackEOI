@@ -302,68 +302,57 @@ public class Estructuras {
 	public static void ejercicio9() {
 		
 		Scanner sc = new Scanner(System.in);
-		String mes = sc.next();
-		System.out.println("Por favor, escriba un mes:");
-		final String enero = "enero";
-		final String febrero = "enero";
-		final String marzo = "enero";
-		final String abril = "enero";
-		final String mayo = "enero";
-		final String junio = "enero";
-		final String julio = "enero";
-		final String agosto = "enero";
-		final String septiembre = "enero";
-		final String octubre = "enero";
-		final String noviembre = "enero";
-		final String diciembre = "enero";
+		System.out.println("Por favor, escriba el número de un mes:");
+		int mes = sc.nextInt();
+		if (mes<1 || mes>12) {
+			System.out.println("Ese mes no existe");
+		} else {
+			switch (mes) {
+			
+			case 1:
+				System.out.println("El mes es enero");
+				break;
+			case 2:
+				System.out.println("El mes es febrero");
+			case 3:
+				System.out.println("El mes es enero");
+				break;
+			case 4:
+				System.out.println("El mes es febrero");
+			case 5:
+				System.out.println("El mes es enero");
+				break;
+			case 6:
+				System.out.println("El mes es febrero");
+			case 7:
+				System.out.println("El mes es enero");
+				break;
+			case 8:
+				System.out.println("El mes es febrero");
+			case 9:
+				System.out.println("El mes es enero");
+				break;
+			case 10:
+				System.out.println("El mes es febrero");
+			case 11:
+				System.out.println("El mes es enero");
+				break;
+			case 12:
+				System.out.println("El mes es febrero");
+				break;
+			}
+			
+			if (mes == 1 || mes == 3 || mes == 5 || mes == 7 || mes == 8 || mes ==10 || mes ==12) {
+				System.out.println("Es un mes de 31 días");
+		} else if (mes == 2) {
+			System.out.println("Es un mes de 28 días");
+	} else {System.out.println("Es un mes de 30 días");
 	
-		int dias;
-		
-		switch (mes) {
-		
-		case enero:
-		case marzo:
-		case mayo:
-		case julio:
-		case agosto:
-		case octubre:
-		case diciembre:
-			dias = 31;
-		break;
-
-		case febrero:
-			System.out.println("El mes de febrero");
-			dias = 28;
-		break;
-		
-		
-		case abril:
-			System.out.println("El mes de abril");
-		break;
-	
-		case junio:
-			System.out.println("El mes de junio");
-		break;
-	
-		case septiembre:
-			System.out.println("El mes de septiembre");
-		break;
-		
-		case noviembre:
-			System.out.println("El mes de noviembre");
-			dias = 30;
-		break;
-		
-		default:
-			dias = 0;
-			break; 
-		}
-//	if(dias == 0)
-//			System.out.println("¡Ese mes no existe!");
-		
-		
-		
+	}
+	}
+		sc.close();
 }
+	//preguntar como hacer que esté en la misma línea del mes
 
 	
 	public static void main(String[] args) {
@@ -383,64 +372,7 @@ public class Estructuras {
 		//ejercicio7();
 //		ejercicio8();
 		ejercicio9();
-		
-		
-//	case enero:
-//		System.out.println("El mes de enero");
-//	
-//	case marzo:
-//		System.out.println("El mes de marzo");
-//	case mayo:
-//		System.out.println("El mes de mayo");
-//	case julio:
-//		System.out.println("El mes de julio");
-//	case agosto:
-//		System.out.println("El mes de agosto");
-//	case octubre:
-//		System.out.println("El mes de octubre");
-//	case diciembre:
-//		System.out.println("El mes de diciembre");
-//	break;
-//
-//	case febrero:
-//		System.out.println("El mes de febrero");
-//	break;
-//	
-//	
-//	case abril:
-//		System.out.println("El mes de abril");
-//	break;
-//
-//	case junio:
-//		System.out.println("El mes de junio");
-//	break;
-//
-//	case septiembre:
-//		System.out.println("El mes de septiembre");
-//	break;
-//	
-//	case noviembre:
-//		System.out.println("El mes de noviembre");
-//	break;
-//	
-//	default:
-//		System.out.println("¡Ese mes no existe!");
-	
-//	
-//		final String enero = "31";
-//		final String febrero = "28";
-//		final String marzo = "31";
-//		final String abril = "30";
-//		final String mayo = "31";
-//		final String junio = "30";
-//		final String julio = "31";
-//		final String agosto = "31";
-//		final String septiembre = "30";
-//		final String octubre = "31";
-//		final String noviembre = "30";
-//		final String diciembre = "31";
-		
-		
+
 		
 	}
 }
