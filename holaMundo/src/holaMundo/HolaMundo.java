@@ -379,26 +379,32 @@ public static void ejercicio6() {
 	public static void ejercicio15() {
 		
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Escriba el nombre de 3 productos: ");
-		String producto1 = sc.nextLine();
-		String producto2 = sc.nextLine();
-		String producto3 = sc.nextLine();
-		System.out.println("Escriba el precio del primer producto: ");
+		final double IVA = 0.21;
+		System.out.println("Escriba el nombre de un producto: ");
+		String producto1 = sc.next();
+		sc.nextLine();
+		System.out.println("Escriba el precio del producto: ");
 		double precioP1 = Double.parseDouble(sc.next().replace(',','.'));
-		System.out.println("Escriba el precio del primer producto: ");
+		sc.nextLine();
+		System.out.println("Escriba el nombre de otro producto: ");
+		String producto2 = sc.next();
+		sc.nextLine();
+		System.out.println("Escriba el precio del producto: ");
 		double precioP2 = Double.parseDouble(sc.next().replace(',','.'));
-		System.out.println("Escriba el precio del primer producto: ");
+		System.out.println("Escriba el nombre de otro producto: ");
+		String producto3 = sc.next();
+		sc.nextLine();
+		System.out.println("Escriba el precio del producto: ");
 		double precioP3 = Double.parseDouble(sc.next().replace(',','.'));
-		double precioP1IVA = precioP1*0.21;
-		double precioP2IVA = precioP2*0.21;
-		double precioP3IVA = precioP3*0.21;
-		System.out.printf("%-15s%12.2f%12.2\n", "NOMBRE", "PRECIO", "CON IVA"); //%12s quiere decir 12 huecos para poner un String, %14s huecos para salario
-		System.out.println("-----------------------------");
-		System.out.printf("%-15s%12.2f%12.2\\n", producto1, precioP1, precioP1IVA); //los números decimales tienen que decir "f" de float, los números sin decimales llevarán 2d"
-		System.out.printf("%-15s%12.2f%12.2\\n", producto2, precioP2, precioP2IVA);
-		System.out.printf("%-15s%12.2f%12.2\\n", producto3, precioP3, precioP3IVA);
-		
+		sc.nextLine();
 	
+		System.out.printf("%-15s%12s%12s\n", "NOMBRE", "PRECIO", "CON IVA"); 
+		System.out.println("---------------------------------------");
+		System.out.printf("%-15s%12.2f$%12.2f$\n", producto1, precioP1, precioP1 *(1+ IVA)); 
+		System.out.printf("%-15s%12.2f$%12.2f$\n", producto2, precioP2, precioP2 *(1+ IVA)); 
+		System.out.printf("%-15s%12.2f$%12.2f$\n", producto3, precioP3, precioP3*(1+IVA));
+		
+	sc.close();
 	}
 	
 	public static void main(String[] args) {
