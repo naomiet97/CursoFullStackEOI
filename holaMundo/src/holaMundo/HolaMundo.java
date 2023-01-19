@@ -400,11 +400,12 @@ public static void ejercicio6() {
 	
 		System.out.printf("%-15s%12s%12s\n", "NOMBRE", "PRECIO", "CON IVA"); 
 		System.out.println("---------------------------------------");
-		System.out.printf("%-15s%12.2f$%12.2f$\n", producto1, precioP1, precioP1 *(1+ IVA)); 
-		System.out.printf("%-15s%12.2f$%12.2f$\n", producto2, precioP2, precioP2 *(1+ IVA)); 
+		System.out.printf("%-15s%12.2f$%12.2f$\n", producto1, precioP1, precioP1*(1+ IVA)); 
+		System.out.printf("%-15s%12.2f$%12.2f$\n", producto2, precioP2, precioP2*(1+ IVA)); 
 		System.out.printf("%-15s%12.2f$%12.2f$\n", producto3, precioP3, precioP3*(1+IVA));
 		
 	sc.close();
+				
 	}
 	
 	public static void main(String[] args) {
@@ -431,7 +432,7 @@ public static void ejercicio6() {
 //		ejemplosFormateos();
 //		ejemplosScanner();
 //		ejercicio14();
-		ejercicio15();
+//		ejercicio15();
 		
 	}
 
