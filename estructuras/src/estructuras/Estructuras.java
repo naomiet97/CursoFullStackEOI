@@ -178,7 +178,7 @@ public class Estructuras {
 
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Escriba una letra");
-		char caracter = sc.next().charAt(0);
+		char caracter = sc.next().charAt(0); //CharAt pasa el contenido del char (caracteres) a números.
 		if (caracter>= 'A' && caracter <='Z') {
 			System.out.println("El caracter " + caracter + " está en mayúscula");
 		} else{
@@ -191,7 +191,7 @@ public class Estructuras {
 
 
 
-	} //PREGUNTAR SOBRE CADENA.CHARAT(0)
+	} 
 
 	public static void ejercicio4() {
 
@@ -314,11 +314,13 @@ public class Estructuras {
 				break;
 			case 2:
 				System.out.print("Febrero");
+				break;
 			case 3:
 				System.out.print("Marzo");
 				break;
 			case 4:
 				System.out.print("Abril");
+				break;
 			case 5:
 				System.out.print("Mayo");
 				break;
@@ -329,11 +331,13 @@ public class Estructuras {
 				break;
 			case 8:
 				System.out.print("Agosto");
+				break;
 			case 9:
 				System.out.print("Septiembre");
 				break;
 			case 10:
 				System.out.print("Octubre");
+				break;
 			case 11:
 				System.out.print("Noviembre");
 				break;
@@ -352,7 +356,34 @@ public class Estructuras {
 	}
 		sc.close();
 }
-	
+	public static void ejercicio10() {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Por favor, escriba un caracter:");
+		char car = sc.next().charAt(0);
+		switch(car) {
+		case 1:
+			System.out.println("El caracter es un signo de puntuación");
+			break;
+		case 2:
+			System.out.println("El caracter es una cifra numérica");
+			break;
+		case 3:
+
+			System.out.println("El caracter es una letra alfabética");
+			break;
+		}
+		if (car == '.' || car == ',' || car == ';' || car == ':') {
+			System.out.println("El caracter es un signo de puntuación");
+		} else if  (Boolean.valueOf(String.valueOf(car='0')) || car<='9') {
+			System.out.println("El caracter es una cifra numérica");
+		}
+		else if (car<='A' && car>='Z' && car<='a' && car>='z') {
+			System.out.println("El caracter es una letra alfabética");
+		} else {
+			System.out.println("No sé que tipo de caracter ha escrito");
+		}
+		sc.close();		 
+	}
 	
 	public static void main(String[] args) {
 		//ejemplosIf();
@@ -363,7 +394,7 @@ public class Estructuras {
 		//ejemploTernarias();
 		//ejemploTernary();
 		//ejercicio2();
-		//ejercicio3();
+//		ejercicio3();
 		//ejercicio1();
 		//ejercicio4();
 		//ejercicio5();
@@ -371,6 +402,7 @@ public class Estructuras {
 		//ejercicio7();
 //		ejercicio8();
 		ejercicio9();
+//		ejercicio10();
 
 		
 	}
