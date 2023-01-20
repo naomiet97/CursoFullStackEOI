@@ -310,50 +310,49 @@ public class Estructuras {
 			switch (mes) {
 			
 			case 1:
-				System.out.println("El mes es enero");
+				System.out.print("Enero");
 				break;
 			case 2:
-				System.out.println("El mes es febrero");
+				System.out.print("Febrero");
 			case 3:
-				System.out.println("El mes es enero");
+				System.out.print("Marzo");
 				break;
 			case 4:
-				System.out.println("El mes es febrero");
+				System.out.print("Abril");
 			case 5:
-				System.out.println("El mes es enero");
+				System.out.print("Mayo");
 				break;
 			case 6:
-				System.out.println("El mes es febrero");
+				System.out.print("Junio");
 			case 7:
-				System.out.println("El mes es enero");
+				System.out.print("Julio");
 				break;
 			case 8:
-				System.out.println("El mes es febrero");
+				System.out.print("Agosto");
 			case 9:
-				System.out.println("El mes es enero");
+				System.out.print("Septiembre");
 				break;
 			case 10:
-				System.out.println("El mes es febrero");
+				System.out.print("Octubre");
 			case 11:
-				System.out.println("El mes es enero");
+				System.out.print("Noviembre");
 				break;
 			case 12:
-				System.out.println("El mes es febrero");
+				System.out.print("Diciembre");
 				break;
 			}
 			
 			if (mes == 1 || mes == 3 || mes == 5 || mes == 7 || mes == 8 || mes ==10 || mes ==12) {
-				System.out.println("Es un mes de 31 días");
+				System.out.println(" es un mes de 31 días");
 		} else if (mes == 2) {
-			System.out.println("Es un mes de 28 días");
-	} else {System.out.println("Es un mes de 30 días");
+			System.out.println(" es un mes de 28 días");
+	} else {System.out.println(" es un mes de 30 días");
 	
 	}
 	}
 		sc.close();
 }
-	//preguntar como hacer que esté en la misma línea del mes
-
+	
 	
 	public static void main(String[] args) {
 		//ejemplosIf();
